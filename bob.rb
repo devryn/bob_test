@@ -1,7 +1,7 @@
 class Bob
 
   def hey(remark)
-    if remark == ""
+    if remark.gsub(/\s+/, "") == ""
       'Fine. Be that way!'
     elsif remark.gsub(/(\d|\W^|,|\s)/, '').empty?
       'Whatever.'
